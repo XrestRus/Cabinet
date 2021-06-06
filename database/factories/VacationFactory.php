@@ -33,7 +33,6 @@ class VacationFactory extends Factory
         return [
             'date_start' => $date_start,
             'date_end' => $date_end,
-            'user_id' => '',
         ];
     }
 }

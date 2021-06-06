@@ -254,6 +254,7 @@ export default {
 
     .table-layout {
         display: flex;
+        width: 100%;
 
         .w-40 {
             width: 40%;

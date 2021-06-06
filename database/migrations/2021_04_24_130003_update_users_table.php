@@ -14,7 +14,7 @@ class UpdateUsersTable extends Migration
     public function up()
     {
         Schema::table("users", function (Blueprint $table) {
-            $table->string("role")->default(1);
+            $table->bigInteger("role")->default(1)->unsigned();
             $table->foreign("role")->references("id")->on("roles")->onUpdate("cascade")->onDelete("cascade");
         });
     }

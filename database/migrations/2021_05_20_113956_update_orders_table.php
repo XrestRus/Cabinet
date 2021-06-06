@@ -17,7 +17,7 @@ class UpdateOrdersTable extends Migration
             $table->bigInteger("state")->default(1)->unsigned();
             $table->foreign("state")
                 ->references("id")
-                ->on("type_orders")
+                ->on("type__orders")
                 ->onUpdate("cascade")
                 ->onDelete("cascade");
         });

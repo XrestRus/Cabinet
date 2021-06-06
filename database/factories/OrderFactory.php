@@ -2,19 +2,21 @@
 
 namespace Database\Factories;
 
-use App\Models\Type__mark;
+use App\Models\Order;
+use App\Models\Product;
+use App\Models\Type__order;
 use App\Models\User;
-use App\Models\Visit;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class VisitFactory extends Factory
+class OrderFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Visit::class;
+    protected $model = Order::class;
 
     /**
      * Define the model's default state.
@@ -24,10 +26,10 @@ class VisitFactory extends Factory
     public function definition()
     {
         return [
-            'clock' => $this->faker->numberBetween(0, 8),
-            'date' => $this->faker->dateTimeBetween('-4 month', '+4 month'),
-            'type_mark_id' => Type__mark::all()->random(),
-            'user_id' => User::all()->random(),
+            'user_id' => User::all()->random()->id,
+            'product_id' => Product::all()->random()->id,
+            'state' => Type__order::all()->random()->id,
+            'date' => date('Y-m-d')
         ];
     }
 }

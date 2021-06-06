@@ -3,6 +3,8 @@
 namespace Database\Factories;
 
 use App\Models\Event;
+use App\Models\Role;
+use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -31,7 +33,7 @@ class EventFactory extends Factory
             );
 
         return [
-            'user_author_id' => '1',
+            'user_author_id' => User::all()->random()->id,
             'title' => $this->faker->word(),
             'desc' => $this->faker->text(15),
             'date_start' => $date_start,

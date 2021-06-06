@@ -19,4 +19,6 @@ class Type__transaction extends Model
     protected $fillable = [
         'title',
     ];
+
+
 }

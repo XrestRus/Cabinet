@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Role;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Auth;
@@ -32,7 +33,8 @@ class UserFactory extends Factory
             'patronymic' => $fakeName[2],
             'email' => $this->faker->unique()->safeEmail(),
             'email_verified_at' => now(),
-            'password' => Hash::make($fakeName[0]) , // password
+            'password' => Hash::make($fakeName[0]), // password
+            'role' => Role::all()->random()->id
         ];
     }
 
