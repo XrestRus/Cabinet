@@ -1,0 +1,116 @@
+.form {
+    width: 430px;
+    border: 1px solid var(--color-form);
+    background-color: var(--color-white);
+    font-size: 18px;
+    color: var(--color-text);
+
+    .form-title {
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .form-box {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 1rem 1rem 0;
+        position: relative;
+
+        .form-label {
+            margin: 0.5rem 1rem;
+        }
+
+        .form-label-checkbox {
+            display: flex;
+            background-color: var(--color-white);
+            padding: 0.5rem;
+            cursor: pointer;
+
+            .label-title-checkbox {
+                width: 100%;
+                margin-left: 0.5rem;
+            }
+            .form-input {
+                cursor: pointer;
+                margin: auto;
+                outline: 1px solid var(--color-form);
+            }
+
+            &:hover {
+                background-color: var(--color-form-h);
+                color: var(--color-white);
+            }
+            &:active {
+                background-color: var(--color-form-a);
+                color: var(--color-white);
+            }
+        }
+
+        .form-input-wrap {
+            padding:  0.5rem 0.5rem 0.5rem 0;
+            background: var(--color-form);
+            display: flex;
+            position: relative;
+
+            .icon {
+                height: 41px;
+                width: 33px;
+                background-color: var(--color-form);
+                position: absolute;
+                top: 0;
+                left: -34px;
+                border-radius: 50% 0 0 50%;
+                background-position-x: 6px !important;
+                background-size: 80% !important;
+            }
+
+            .form-input {
+                padding: 0.5rem;
+                outline: none;
+                width: 100%;
+                border: 0;
+
+                &:focus {
+                    outline: 1px solid black;
+                }
+            }
+
+        }
+
+        input[type=checkbox] {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        .error {
+            margin-left: 1rem;
+            text-decoration: underline;
+
+            &::before {
+                content: "*";
+            }
+        }
+    }
+
+    .form-link {
+        margin: 2rem 1rem 1rem 0;
+
+        span {
+            margin-left: 0.5rem;
+        }
+    }
+
+    .form-button {
+        padding: 0.5rem 0;
+        margin: 1rem 0 0 0;
+        border-radius: 5px 5px 0 0;
+    }
+
+    @media (max-height: 430px) {
+        .form-box {
+            margin: initial !important;
+        }
+    }
+}

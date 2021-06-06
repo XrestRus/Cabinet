@@ -1,0 +1,44 @@
+%btn-fixe {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 100000;
+    width: 35px !important;
+    height: 35px;
+    border-radius: 10px;
+
+    &:hover {
+        border-radius: 25px;
+        width: 135px !important;
+    }
+}
+
+button, .label-btn {
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color: var(--color-form);
+    transition: 0.2s;
+    cursor: pointer;
+    text-align: center;
+    color: var(--color-white);
+    font-size: 24px;
+
+    &:hover {
+        background-color: var(--color-form-h);
+    }
+    &:active {
+        background-color: var(--color-form-a);
+    }
+}
+
+.btn--add-fixed {
+    @extend %btn-fixe;
+}
+.btn--edit-fixed {
+    @extend %btn-fixe;
+    background-image: url(/images/edit.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: orangered !important;
+}

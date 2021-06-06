@@ -1,0 +1,148 @@
+.svg {
+    background-size: contain;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    min-height: 25px;
+    min-width:  25px;
+    max-height: 25px;
+    max-width:  25px;
+}
+
+.svg-big {
+    background-size: contain;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.svg-login {
+    background-image: url(/images/login.svg);
+}
+.svg-registration {
+    background-image: url(/images/registration.svg);
+}
+.svg-logout {
+    background-image: url(/images/logout.svg);
+}
+.svg-event {
+    background-image: url(/images/event.svg);
+}
+.svg-vacation {
+    background-image: url(/images/vacation.svg);
+}
+.svg-visit {
+    background-image: url(/images/visit.svg);
+}
+.svg-payment {
+    background-image: url(/images/payment.svg);
+}
+.svg-cabinet {
+    background-image: url(/images/cabinet.svg);
+}
+.svg-project {
+    background-image: url(/images/project.svg);
+}
+.svg-calendar {
+    background-image: url(/images/calendar.svg);
+}
+
+%svg--tools {
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    // min-height: 50px;
+    // min-width:  50px;
+    // max-height: 50px;
+    // max-width:  50px;
+}
+
+.svg-add {
+    @extend %svg--tools;
+    background-image: url(/images/add.svg);
+}
+.svg-edit {
+    @extend %svg--tools;
+    background-image: url(/images/edit.svg);
+}
+.svg-delete {
+    @extend %svg--tools;
+    background-image: url(/images/delete.svg);
+}
+.svg-info {
+    @extend %svg--tools;
+    background-image: url(/images/present.svg);
+}
+
+.svg-close {
+    @extend %svg--tools;
+    background-image: url(/images/close.svg);
+}
+.svg-download {
+    @extend %svg--tools;
+    background-image: url(/images/download.svg);
+}
+
+.svg-cancel {
+    @extend %svg--tools;
+    background-image: url(/images/cancel.svg);
+}
+.svg-success {
+    @extend %svg--tools;
+    background-image: url(/images/success.svg);
+}
+
+.svg-back {
+    @extend %svg--tools;
+    background-image: url(/images/back.svg);
+}
+.svg-table {
+    @extend %svg--tools;
+    background-image: url(/images/table.svg);
+}
+.svg-card {
+    @extend %svg--tools;
+    background-image: url(/images/card.svg);
+}
+.svg-pay {
+    @extend %svg--tools;
+    background-image: url(/images/pay.svg);
+}
+.svg-buy {
+    @extend %svg--tools;
+    background-image: url(/images/buy.svg);
+}
+.svg-pdf {
+    @extend %svg--tools;
+    background-image: url(/images/pdf.svg);
+}
+.svg-shop {
+    @extend %svg--tools;
+    background-image: url(/images/shop.svg);
+}
+
+.svg-buy-b {
+    @extend %svg--tools;
+    background-image: url(/images/buy-black.svg);
+}
+.svg-shop-b {
+    @extend %svg--tools;
+    background-image: url(/images/shop-black.svg);
+}
+
+.svg-table-b {
+    @extend %svg--tools;
+    background-image: url(/images/table-black.svg);
+}
+.svg-list-b {
+    @extend %svg--tools;
+    background-image: url(/images/list.svg);
+}
+
+
+.svg-current {
+    @extend %svg--tools;
+    background-image: url(/images/reset.svg);
+}
