@@ -53,9 +53,6 @@
 <div class='center h'>
 	Табель учета рабочего времени  за {{ $date[0].' - '.$date[1] }}
 </div>
-
-
-
 <table>
     <tr>
 		<td rowspan='3'>

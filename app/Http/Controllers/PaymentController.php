@@ -91,8 +91,8 @@ class PaymentController extends Controller
     public function loadPdf(User $user, int $year, int $month)
     {
         $payments = $this->payments->showGroupToDate($user, $year, $month);
-        $payments_accrual = $this->payments->filterByTransaction($payments, 2);
-        $payments_retention = $this->payments->filterByTransaction($payments, 1);
+        $payments_accrual = $this->payments->filterByTransaction($payments, 1);
+        $payments_retention = $this->payments->filterByTransaction($payments, 2);
 
         $pdf = PDF::loadView(
             'pdf.payment',
