@@ -10,7 +10,9 @@
 - Создать БД (laravel-server)
 - Запустить в консоле команды:
     - composer install
-    - php artisan migrate:flesh --seed
+    - php artisan migrate:fresh --seed
+    - php artisan shedule:work
+    - php artisan storage:link
     - npm run hot
 
 # Источники
