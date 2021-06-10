@@ -14,6 +14,9 @@
     - php artisan shedule:work
     - php artisan storage:link
     - npm run hot
+    - нужно создать домен
+        - название - cabinet
+        - путь - \cabinet\public
 
 # Тест:
 - http://u108869.test-handyhost.ru/public/login
