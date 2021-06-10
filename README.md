@@ -15,6 +15,11 @@
     - php artisan storage:link
     - npm run hot
 
+# Тест:
+- http://u108869.test-handyhost.ru/public/login
+- admin@ro.ru
+- admin
+
 # Источники
 - #### [Laravel](https://laravel.com/)
 - #### [Vue](https://ru.vuejs.org/)
