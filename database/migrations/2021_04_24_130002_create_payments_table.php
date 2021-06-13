@@ -16,7 +16,11 @@ class CreatePaymentsTable extends Migration
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
             $table->bigInteger("type_payment")->unsigned();
+<<<<<<< HEAD
             $table->string("comment")->default(null)->nullable();
+=======
+            $table->string("comment")->nullable()->default(null);
+>>>>>>> f65f5768cef3f85e8ba1592ed009dc1fda2e95a0
             $table->bigInteger("user_id")->unsigned();
             $table->integer("clock")->default(0);
             $table->integer("days")->default(0);
