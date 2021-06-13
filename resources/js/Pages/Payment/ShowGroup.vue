@@ -257,11 +257,9 @@ export default {
         width: 100%;
 
         .w-40 {
-            width: 40%;
             flex: 0.4;
         }
         .w-60 {
-            width: 60%;
             flex: 0.6;
         }
     }
