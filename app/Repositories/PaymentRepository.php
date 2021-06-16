@@ -15,7 +15,6 @@ class PaymentRepository
         $payments = Payment::without('type_payment')->join("users", "payments.user_id", "=", "users.id")
             ->select(
                 DB::raw('DISTINCT users.id as user_id,
-                    COUNT(`date`) as count_date,
                     CONCAT(`users`.`name`, " ", `users`.`surname`, " ", `users`.`patronymic`) as user,
                     `users`.`id`,
                     DATE_FORMAT(`date`, \'%Y-%m\') as date'

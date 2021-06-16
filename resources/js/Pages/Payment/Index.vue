@@ -23,12 +23,16 @@
                 <template v-slot:head>
                     <td-show value='Пользователь'/>
                     <td-show value='Дата'/>
-                    <td-show value='Месяц'/>
                 </template>
                 <template v-slot:show="props">
                     <td-show :value="props.item.user"/>
-                    <td-show :value="props.item.date"/>
-                    <td-show :value="props.item.date"/>
+                    <td-show :value="(new Date(props.item.date))
+                            .toLocaleString('ru', {
+                                year: 'numeric',
+                                month: 'long',
+                            }
+                        )"
+                    />
                 </template>
             </table-standart>
             <template v-if="modal.isShow">
