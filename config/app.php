@@ -27,7 +27,7 @@ return [
     */
 
     'env' => env('APP_ENV', 'production'),
-
+	
     /*
     |--------------------------------------------------------------------------
     | Application Debug Mode
@@ -56,6 +56,7 @@ return [
 
     'asset_url' => env('ASSET_URL', null),
 
+	// 'mix_url' => env('APP_URL'),
     /*
     |--------------------------------------------------------------------------
     | Application Timezone

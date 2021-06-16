@@ -15,7 +15,10 @@
                 +
             </button>
         </tools-panel>
-        <div class="view view--free-section">
+        <div
+            :class="{ 'view--free-section': isAdmin }" 
+            class="view"
+        >
             <table-standart :collection="payments" :tools="tools" >
                 <template v-slot:head>
                     <td-show value='Пользователь'/>

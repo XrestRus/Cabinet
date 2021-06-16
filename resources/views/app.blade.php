@@ -5,8 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
-
+        <title>Cabinet</title>
+       
+        <link rel="shortcut icon" href="https://u108869.test-handyhost.ru/images/cabinet.svg" type="image/x-icon">
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+        <meta name="description" content="Личный кабинет предприятия"> 
+        <meta name="Keywords" content="кабинет, ваш"> 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 

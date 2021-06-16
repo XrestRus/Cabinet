@@ -14,7 +14,10 @@
                 +
             </button>
         </tools-panel>
-        <div class="vacations view view--free-section">
+        <div
+            :class="{ 'view--free-section': isAdmin }" 
+            class="view vacations"
+        >
             <table-standart :collection="vacationsFillter" :tools="tools" :changeRow='validate'>
                 <template v-slot:head>
                     <td-show value='Сотрудник' />

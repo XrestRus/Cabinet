@@ -43,7 +43,7 @@
                 <td
                     v-for="day of selectedDate.days"
                     :key='day'
-                    class="data"
+                    class="table-data data"
                     @click='focus({ day, user }, $event)'
                 >
 
@@ -256,9 +256,10 @@ export default {
                 position: sticky;
                 z-index: 1;
                 background: white;
-                box-shadow: 5px 1px 9px 0px #ff000059;
-
-                div {
+                // box-shadow: 5px 1px 9px 0px #ff000059;
+                box-shadow: 1px 2px 3px 0px #ff000059;
+               
+               div {
                     width: 120px;
                 }
             }
