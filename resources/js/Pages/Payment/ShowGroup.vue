@@ -37,7 +37,10 @@
                         <td-show :value="props.item.clock"/>
                         <td-show :value="props.item.sum"/>
                     </template>
-                    <template v-slot:edit="props">
+                    <template 
+                        v-if='isAdmin'
+                        v-slot:edit="props"
+                    >
                         <td-select
                             v-model="props.currentItem.type_payment"
                             :error='props.errors.type_payments'
@@ -80,7 +83,10 @@
                         <td-show :value="props.item.date"/>
                         <td-show :value="props.item.sum"/>
                     </template>
-                    <template v-slot:edit="props">
+                    <template 
+                        v-if='isAdmin'
+                        v-slot:edit="props"
+                    >
                         <td-select
                             v-model="props.currentItem.type_payment"
                             :error='props.errors.type_payment'

@@ -24,7 +24,7 @@
                 >
 
                     <slot
-                        v-if="selected && selected.id === item.id"
+                        v-if="tools.isShow && selected && selected.id === item.id"
                         name='edit'
                         :item="item"
                         :currentItem='selected'

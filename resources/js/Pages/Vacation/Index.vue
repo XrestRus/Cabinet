@@ -39,7 +39,10 @@
                         :value="props.item.days"
                     />
                 </template>
-                <template v-slot:edit="props">
+                <template 
+                    v-if='isAdmin'
+                    v-slot:edit="props"
+                >
                     <td-select
                         v-model="props.currentItem.user"
                         :data="users"
