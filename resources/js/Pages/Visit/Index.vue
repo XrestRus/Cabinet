@@ -48,8 +48,8 @@
                 >
 
                    <div class="div-data-visit"
-                        v-if=" day === selected.day && user.id === selected.user_id "
-                        :class="{selected: day === selected.day && user.id === selected.user_id }"
+                        v-if=" day == selected.day && user.id == selected.user_id "
+                        :class="{selected: day == selected.day && user.id == selected.user_id }"
                     >
                         <div class="form-clock">
                             <input v-model="selected.clock" autofocus>
@@ -169,10 +169,10 @@ export default {
         async action() {
             if (!this.selected.clock || !this.selected.type_mark) return;
 
-            let visitCurrent = this.selectedUser?.visits.find(i => i.id === this.selected.id) ?? null;
+            let visitCurrent = this.selectedUser?.visits.find(i => i.id == this.selected.id) ?? null;
 
-            if (this.selected.id && visitCurrent.user_id === this.selected.user_id) {
-                if (this.selected.clock !== visitCurrent.clock || this.selected.type_mark.id !== visitCurrent.type_mark.id)
+            if (this.selected.id && visitCurrent.user_id == this.selected.user_id) {
+                if (this.selected.clock != visitCurrent.clock || this.selected.type_mark.id != visitCurrent.type_mark.id)
                     this.$inertia.post(route('visit.edit', { id: this.selected.id }), this.selected, { only: ['users'] });
                 else return;
             } else {
