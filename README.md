@@ -18,8 +18,8 @@
         - название - cabinet
         - путь - \cabinet\public
 
-~~#Тест:~~
-~~- http://u108869.test-handyhost.ru/ ~~
+~~Тест:~~
+~~- http://u108869.test-handyhost.ru/~~
 ~~- admin@ro.ru ~~
 ~~- admin ~~
 
